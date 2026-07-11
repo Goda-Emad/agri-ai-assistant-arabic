@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Krishi Sahayak — Chat Application with Image Support
+   Agri AI Assistant — Chat Application with Image Support
    ========================================================================== */
 
 (function($) {
@@ -7,13 +7,13 @@
 
     var WELCOME = '<div class="welcome">'
         + '<div class="welcome-icon"><i class="bi bi-flower2"></i></div>'
-        + '<h3>Krishi Sahayak</h3>'
+        + '<h3>Agri AI Assistant</h3>'
         + '<p>Your AI agriculture assistant. Ask anything about crops, pests, soil, or share a photo for diagnosis.</p>'
         + '<div class="chips">'
-        + '<span class="chip" data-text="What is the best time to plant wheat in India?"><i class="bi bi-calendar3"></i> Wheat planting season</span>'
+        + '<span class="chip" data-text="What is the best time to plant wheat?"><i class="bi bi-calendar3"></i> Wheat planting season</span>'
         + '<span class="chip" data-text="How to control pest attack on tomato plants?"><i class="bi bi-bug"></i> Tomato pest control</span>'
-        + '<span class="chip" data-text="What fertilizer is good for paddy rice?"><i class="bi bi-droplet"></i> Paddy fertilizer</span>'
-        + '<span class="chip" data-text="Tell me about PM-KISAN scheme eligibility"><i class="bi bi-card-list"></i> PM-KISAN scheme</span>'
+        + '<span class="chip" data-text="What fertilizer is good for rice?"><i class="bi bi-droplet"></i> Rice fertilizer</span>'
+        + '<span class="chip" data-text="What are the signs of nitrogen deficiency in crops?"><i class="bi bi-card-list"></i> Nutrient deficiency</span>'
         + '</div></div>';
 
     var mediaRecorder = null, audioChunks = [], isRecording = false, isProcessing = false;
@@ -57,7 +57,7 @@
 
     // ── Helpers ──
     function showWelcome() { $messages.html(WELCOME); }
-    function updateDate() { $('#dateDisplay').text(new Date().toLocaleDateString('en-IN', { weekday: 'short', month: 'short', day: 'numeric' })); }
+    function updateDate() { $('#dateDisplay').text(new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })); }
     function scrollBottom() { $messages.stop().animate({ scrollTop: $messages[0].scrollHeight }, 250); }
     function getTime() { return new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }); }
     function showTyping() { $typing.addClass('visible'); scrollBottom(); }
@@ -167,7 +167,7 @@
         $audio.attr('src', src);
         $audio[0].play().catch(function() {});
         if ('Notification' in window && Notification.permission === 'granted') {
-            new Notification('Krishi Sahayak', { body: 'Voice response ready', icon: '/static/images/favicon.ico' });
+            new Notification('Agri AI Assistant', { body: 'Voice response ready', icon: '/static/images/favicon.ico' });
         }
     }
 
