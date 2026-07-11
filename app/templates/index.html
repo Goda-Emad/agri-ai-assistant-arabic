@@ -110,9 +110,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='images/favicon.ico') }}">
-    <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/Digilians.ico') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/Digilians.ico') }}">
     <link rel="author" href="https://github.com/Goda-Emad">
     <link rel="manifest" href="{{ url_for('static', filename='manifest.webmanifest') }}">
 </head>
@@ -122,11 +121,7 @@
     <nav class="navbar">
         <div class="nav-inner">
             <a class="brand" href="/">
-                <!--
-                    مكان الشعار: استبدل السطر اللي تحته بالصورة بتاعتك
-                    مثال: <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" style="width:34px;height:34px;border-radius:10px;">
-                -->
-                <span class="brand-icon"><i class="bi bi-flower2"></i></span>
+                <span class="brand-icon"><img src="{{ url_for('static', filename='images/Digilians.ico') }}" alt="Logo" style="width:100%;height:100%;object-fit:contain;border-radius:10px;"></span>
                 <span>Agri AI Assistant</span>
             </a>
             <div class="nav-actions">
@@ -147,11 +142,7 @@
             <!-- Header -->
             <div class="card-header">
                 <div class="header-left">
-                    <!--
-                        مكان الشعار داخل الهيدر (اختياري): تقدر تستبدل الأيقونة بنفس الشعار
-                        مثال: <div class="avatar"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" style="width:100%;height:100%;object-fit:cover;border-radius:11px;"></div>
-                    -->
-                    <div class="avatar"><i class="bi bi-flower2"></i></div>
+                    <div class="avatar"><img src="{{ url_for('static', filename='images/Digilians.ico') }}" alt="Logo" style="width:100%;height:100%;object-fit:contain;border-radius:11px;"></div>
                     <div>
                         <h5>Agri AI Assistant</h5>
                         <span class="status"><i class="bi bi-circle-fill"></i> Online</span>
