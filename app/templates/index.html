@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishi Sahayak - AI Agriculture Assistant for Indian Farmers</title>
-    <meta name="description" content="AI-powered agriculture assistant for Indian farmers. Get expert advice on crops, pest control, soil health, weather, government schemes, and farming practices. Supports voice, text, and image analysis.">
-    <meta name="keywords" content="agriculture, farming, India, crops, pest control, soil health, AI assistant, chatbot, Kharif, Rabi, Zaid, wheat, rice, paddy, PM-KISAN, fertilizers, irrigation">
-    <meta name="author" content="Mohammed Ashraf">
+    <title>Agri AI Assistant - Smart Farming Advisor</title>
+    <meta name="description" content="AI-powered agriculture assistant. Get expert advice on crops, pest control, soil health, weather, and farming practices. Supports voice, text, and image analysis.">
+    <meta name="keywords" content="agriculture, farming, crops, pest control, soil health, AI assistant, chatbot, fertilizers, irrigation">
+    <meta name="author" content="Goda Emad">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#0a1628">
+    <meta name="theme-color" content="#1f1a12">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://llm-agri-bot.onrender.com/">
+    <link rel="canonical" href="https://your-domain.com/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://llm-agri-bot.onrender.com/">
-    <meta property="og:title" content="Krishi Sahayak - AI Agriculture Assistant for Indian Farmers">
-    <meta property="og:description" content="Get expert AI-powered advice on crops, pest control, soil health, weather, and government schemes. Supports voice, text, and image-based crop disease diagnosis.">
-    <meta property="og:image" content="https://llm-agri-bot.onrender.com/static/images/og-image.png">
-    <meta property="og:site_name" content="Krishi Sahayak">
-    <meta property="og:locale" content="en_IN">
+    <meta property="og:url" content="https://your-domain.com/">
+    <meta property="og:title" content="Agri AI Assistant - Smart Farming Advisor">
+    <meta property="og:description" content="Get expert AI-powered advice on crops, pest control, soil health, weather, and farming practices. Supports voice, text, and image-based crop disease diagnosis.">
+    <meta property="og:image" content="{{ url_for('static', filename='images/og-image.png') }}">
+    <meta property="og:site_name" content="Agri AI Assistant">
+    <meta property="og:locale" content="ar_EG">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://llm-agri-bot.onrender.com/">
-    <meta name="twitter:title" content="Krishi Sahayak - AI Agriculture Assistant">
-    <meta name="twitter:description" content="AI-powered agriculture assistant for Indian farmers. Voice, text, and image-based crop advisory.">
-    <meta name="twitter:image" content="https://llm-agri-bot.onrender.com/static/images/og-image.png">
-    <meta name="twitter:creator" content="@mohammed97ashraf">
+    <meta name="twitter:url" content="https://your-domain.com/">
+    <meta name="twitter:title" content="Agri AI Assistant - Smart Farming Advisor">
+    <meta name="twitter:description" content="AI-powered agriculture assistant. Voice, text, and image-based crop advisory.">
+    <meta name="twitter:image" content="{{ url_for('static', filename='images/og-image.png') }}">
 
     <!-- AI Crawlers -->
     <meta name="llms-txt" content="/llms.txt">
@@ -39,36 +38,35 @@
     {
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "Krishi Sahayak",
+        "name": "Agri AI Assistant",
         "alternateName": "AI Agriculture Assistant",
-        "url": "https://llm-agri-bot.onrender.com",
-        "description": "AI-powered agriculture assistant for Indian farmers. Get expert advice on crops, pest control, soil health, weather, and government schemes.",
+        "url": "https://your-domain.com",
+        "description": "AI-powered agriculture assistant. Get expert advice on crops, pest control, soil health, weather, and farming practices.",
         "applicationCategory": "AgricultureApplication",
         "operatingSystem": "Web Browser",
         "offers": {
             "@type": "Offer",
             "price": "0",
-            "priceCurrency": "INR"
+            "priceCurrency": "USD"
         },
         "author": {
             "@type": "Person",
-            "name": "Mohammed Ashraf",
-            "url": "https://www.linkedin.com/in/mohammed97ashraf",
+            "name": "Goda Emad",
+            "url": "https://www.linkedin.com/in/goda-emad/",
             "sameAs": [
-                "https://github.com/mohammed97ashraf",
-                "https://www.linkedin.com/in/mohammed97ashraf"
+                "https://github.com/Goda-Emad",
+                "https://www.linkedin.com/in/goda-emad/"
             ]
         },
-        "inLanguage": ["en", "hi"],
+        "inLanguage": ["en", "ar"],
         "featureList": [
             "AI Crop Disease Diagnosis",
             "Voice Input & Output",
             "Agricultural Advisory",
-            "Government Scheme Information",
             "Image Analysis",
             "Multilingual Support"
         ],
-        "screenshot": "https://llm-agri-bot.onrender.com/static/images/og-image.png"
+        "screenshot": "{{ url_for('static', filename='images/og-image.png') }}"
     }
     </script>
     <script type="application/ld+json">
@@ -78,26 +76,26 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "What is Krishi Sahayak?",
+                "name": "What is Agri AI Assistant?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Krishi Sahayak is an AI-powered agriculture assistant that helps Indian farmers with crop advice, pest control, soil health, weather information, and government schemes."
+                    "text": "Agri AI Assistant is an AI-powered agriculture assistant that helps farmers with crop advice, pest control, soil health, and weather information."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Can Krishi Sahayak diagnose crop diseases from photos?",
+                "name": "Can Agri AI Assistant diagnose crop diseases from photos?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, you can upload a photo of your crops and Krishi Sahayak will analyze it using AI vision to identify diseases, pests, and nutrient deficiencies."
+                    "text": "Yes, you can upload a photo of your crops and Agri AI Assistant will analyze it using AI vision to identify diseases, pests, and nutrient deficiencies."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Is Krishi Sahayak free to use?",
+                "name": "Is Agri AI Assistant free to use?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, Krishi Sahayak is completely free to use. It provides AI-powered agricultural advisory at no cost."
+                    "text": "Yes, Agri AI Assistant is completely free to use. It provides AI-powered agricultural advisory at no cost."
                 }
             }
         ]
@@ -115,9 +113,7 @@
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
     <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='images/favicon.ico') }}">
     <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
-    <link rel="alternate" hreflang="en" href="https://krishisahayak.vercel.app/">
-    <link rel="alternate" hreflang="hi" href="https://krishisahayak.vercel.app/?lang=hi">
-    <link rel="author" href="https://github.com/mohammed97ashraf">
+    <link rel="author" href="https://github.com/Goda-Emad">
     <link rel="manifest" href="{{ url_for('static', filename='manifest.webmanifest') }}">
 </head>
 <body>
@@ -126,8 +122,12 @@
     <nav class="navbar">
         <div class="nav-inner">
             <a class="brand" href="/">
+                <!--
+                    مكان الشعار: استبدل السطر اللي تحته بالصورة بتاعتك
+                    مثال: <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" style="width:34px;height:34px;border-radius:10px;">
+                -->
                 <span class="brand-icon"><i class="bi bi-flower2"></i></span>
-                <span>Krishi Sahayak</span>
+                <span>Agri AI Assistant</span>
             </a>
             <div class="nav-actions">
                 <button class="nav-btn" id="clearBtn" title="Clear conversation">
@@ -147,9 +147,13 @@
             <!-- Header -->
             <div class="card-header">
                 <div class="header-left">
+                    <!--
+                        مكان الشعار داخل الهيدر (اختياري): تقدر تستبدل الأيقونة بنفس الشعار
+                        مثال: <div class="avatar"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" style="width:100%;height:100%;object-fit:cover;border-radius:11px;"></div>
+                    -->
                     <div class="avatar"><i class="bi bi-flower2"></i></div>
                     <div>
-                        <h5>Krishi Sahayak</h5>
+                        <h5>Agri AI Assistant</h5>
                         <span class="status"><i class="bi bi-circle-fill"></i> Online</span>
                     </div>
                 </div>
@@ -198,10 +202,10 @@
     <!-- Footer -->
     <footer class="footer">
         <p>Made with <i class="bi bi-heart-fill footer-heart"></i> by
-            <a href="https://www.linkedin.com/in/mohammed97ashraf" target="_blank" rel="noopener">Mohammed Ashraf</a>
+            <a href="https://www.linkedin.com/in/goda-emad/" target="_blank" rel="noopener">Goda Emad</a>
             &middot;
-            <a href="https://github.com/mohammed97ashraf" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/mohammed97ashraf" target="_blank" rel="noopener" class="ms-1" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/Goda-Emad" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/goda-emad/" target="_blank" rel="noopener" class="ms-1" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
         </p>
     </footer>
 
