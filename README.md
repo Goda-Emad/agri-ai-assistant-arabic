@@ -130,7 +130,7 @@ Copy `.env.example` to `.env` and configure:
 ## Project Structure
 agri-ai-assistant-arabic/
 ├── app/
-│   ├── init.py             # App factory (create_app)
+│   ├── __init__.py             # App factory (create_app)
 │   ├── config.py               # Environment-based configuration
 │   ├── routes/
 │   │   ├── main.py             # Index page, robots.txt, sitemap, llms.txt
@@ -156,7 +156,6 @@ agri-ai-assistant-arabic/
 ├── run.py                       # Dev entry point
 ├── pyproject.toml               # uv / project config
 └── requirements.txt             # pip fallback
----
 
 ## Deployment
 
@@ -195,8 +194,8 @@ docker run -p 10000:10000 --env-file .env agri-ai-assistant
 
 ## How It Works
 User sends message (text / image / voice)
-│
-▼
+        │
+        ▼
 ┌─────────────────────────────────────────┐
 │  Flask Backend                          │
 │  ├── Text? → Groq LLM (gpt-oss-120b)  │
@@ -206,8 +205,8 @@ User sends message (text / image / voice)
 │  Memory: Redis (or in-memory fallback)  │
 │  Cache:  Groq automatic prompt caching  │
 └─────────────────────────────────────────┘
-│
-▼
+        │
+        ▼
 Response with text + optional voice audio
 
 ---
