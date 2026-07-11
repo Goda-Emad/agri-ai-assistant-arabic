@@ -1,0 +1,22 @@
+{
+    "name": "Agri AI Assistant - Smart Farming Advisor",
+    "short_name": "Agri AI Assistant",
+    "description": "AI-powered agriculture assistant. Get expert advice on crops, pest control, soil health, weather, and farming practices.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1f1a12",
+    "theme_color": "#6b9c4f",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/static/images/Digilians.ico",
+            "sizes": "any",
+            "type": "image/x-icon"
+        }
+    ],
+    "categories": ["agriculture", "education", "utilities"],
+    "lang": "ar",
+    "dir": "rtl",
+    "scope": "/",
+    "prefer_related_applications": false
+}
