@@ -42,16 +42,19 @@
     });
 
     // ── Theme ──
+    // NOTE: The CSS default (:root) is the DARK theme. The LIGHT theme only
+    // activates when data-theme="light" is set on <html>. So the toggle
+    // logic below must set/remove "light", not "dark".
     function initTheme() {
-        if (localStorage.getItem('agri-bot-theme') === 'dark') {
-            document.documentElement.setAttribute('data-theme', 'dark');
+        if (localStorage.getItem('agri-bot-theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
             $themeIcon.removeClass('bi-moon-stars-fill').addClass('bi-sun-fill');
         }
     }
     function toggleTheme() {
-        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-        document.documentElement[dark ? 'removeAttribute' : 'setAttribute']('data-theme', 'dark');
-        localStorage.setItem('agri-bot-theme', dark ? 'light' : 'dark');
+        var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+        document.documentElement[isLight ? 'removeAttribute' : 'setAttribute']('data-theme', 'light');
+        localStorage.setItem('agri-bot-theme', isLight ? 'dark' : 'light');
         $themeIcon.toggleClass('bi-moon-stars-fill bi-sun-fill');
     }
 
